@@ -20,6 +20,7 @@ ga('send', 'pageview', {'page': '/my/page'});
 ga('send', 'pageview', {'page': '6c5440a0-f71d-11e3-a3ac-0800200c9a66'});      
 ga('send', 'pageview', {'page': device.uuid});      
 ga('send', 'pageview', {'page': device.name});      
+ga('send', 'pageview', {'page': 'uuidname'});      
 	</script>
 </head>
 <body>
@@ -38,6 +39,13 @@ ga('send', 'pageview', {'page': device.name});
 	<a href="#" onclick="ga('send','pageview','/test-pageview6');return false;">Send UA Pageview...</a>
 	<h1>Test</h1>
 	<a href="#" onclick="ga('send','pageview','/test-pageview7');return false;">Send UA Pageview...</a>
-	<h1>Test</h1>
+	<h1>device.name</h1>
+	<a href="#" onclick="ga('send','pageview',device.name);return false;">Send UA Pageview...</a>
+	<h1>device.version</h1>
+	<a href="#" onclick="ga('send','pageview',device.version);return false;">Send UA Pageview...</a>
+	<h1>device.uuid</h1>
+	<a href="#" onclick="ga('send','pageview',device.uuid);return false;">Send UA Pageview...</a>
+	<h1>platform</h1>
+	<a href="#" onclick="ga('send','pageview',device.platform);return false;">Send UA Pageview...</a>
 </body>
 </html>
